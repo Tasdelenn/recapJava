@@ -31,3 +31,7 @@ Fakat buna rağmen bir problem var. Yine de new lenen tüm yerler değişecek...
 **KURAL**: (Business, DataAccess, API, Arayüz vs için olmak üzere... Entities özellik sınıfı olduğu için bu hariç)
 Bir katman başka bir katmanın class ını  kullanıyorken, Sadece Interface üzerinden erişim sağlamalıdır.
 
+---
+
+>> CORE paket isminin bazı şirketlerde COMMON, bazı şirketlerde ORTAK olarak isimlendirildiğini görebilirsin.
+

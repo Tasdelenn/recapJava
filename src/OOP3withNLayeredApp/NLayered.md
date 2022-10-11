@@ -20,3 +20,14 @@ Bu gibi isimler sık kullanılır.
 
 HibernateProductDao ve JDBCProductDao gibi birbirinin alternatifi olan durumlarda
 (Veya CorporateCustomer ve IndivdualCustomer vs gibi) bunlara INTERFACE yapılır...
+
+Bundan sonra, 
+Interface oluştururum,
+JDBCDao yu açarım, implemente ederim, kodlarımı doldururum...
+HibernateDao yu açarım, implemente ederim, kodlarımı doldururum...
+Böylece JdbcProductDao ve HibernateProductDao'ya "Sen IProductDao'nın kurallarına UYACAKSINIZ!" demiş oluyoruz.
+
+Fakat buna rağmen bir problem var. Yine de new lenen tüm yerler değişecek...
+**KURAL**: (Business, DataAccess, API, Arayüz vs için olmak üzere... Entities özellik sınıfı olduğu için bu hariç)
+Bir katman başka bir katmanın class ını  kullanıyorken, Sadece Interface üzerinden erişim sağlamalıdır.
+

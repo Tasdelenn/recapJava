@@ -1,5 +1,6 @@
 package OOP3withNLayeredApp.Business;
 
+import OOP3withNLayeredApp.DataAccess.HibernateProductDao;
 import OOP3withNLayeredApp.DataAccess.JdbcProductDao;
 import OOP3withNLayeredApp.Entities.Product;
 
@@ -11,7 +12,7 @@ public class ProductManager {
             throw new Exception("Ürün fiyatı 10 TL 'den küçük olamaz");
         }
 
-        JdbcProductDao productDao = new JdbcProductDao();   // Yukarıdaki iş kuralından geçerse, veritabanına ekle...
+        HibernateProductDao productDao = new HibernateProductDao(); // Bu doğru bi yöntem değil. Çünkü bu sefer de Hibernate e bağımlı olduk...
         productDao.add(product);
     }
 }

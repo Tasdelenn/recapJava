@@ -2,7 +2,7 @@ package OOP3withNLayeredApp.DataAccess;
 
 import OOP3withNLayeredApp.Entities.Product;
 
-public class JdbcProductDao {
+public class JdbcProductDao implements IProductDao {    // JdbcProductDao
 
     public void add(Product product){
         //Sadece ve sadece DB erişim kodları yazılır buraya (Çünkü Data Access kısmındayız) >> SQL

@@ -1,6 +1,10 @@
 package OOP3withNLayeredApp;
 
 import OOP3withNLayeredApp.Business.ProductManager;
+import OOP3withNLayeredApp.Core.Logging.DatabaseLogger;
+import OOP3withNLayeredApp.Core.Logging.FileLogger;
+import OOP3withNLayeredApp.Core.Logging.ILogger;
+import OOP3withNLayeredApp.Core.Logging.MailLogger;
 import OOP3withNLayeredApp.DataAccess.HibernateProductDao;
 import OOP3withNLayeredApp.DataAccess.IProductDao;
 import OOP3withNLayeredApp.DataAccess.JdbcProductDao;
@@ -14,10 +18,11 @@ public class Main {
 
         Product product1 = new Product(1,"Iphone 13Pro",20000); // Normalde müşteri ID girmez de... Öğrenmek için varsayım yapıyoruz...
 
-        ProductManager productManager1 = new ProductManager(new HibernateProductDao());
-        ProductManager productManager2 = new ProductManager(new JdbcProductDao());
+        ILogger[] loggers = {new DatabaseLogger(), new FileLogger(),new MailLogger()};  // İster birini, ister iki veya üçünü gir, istersen hiç girme...
+
+        ProductManager productManager1 = new ProductManager(new HibernateProductDao(),loggers);
         productManager1.add(product1);
-        productManager2.add(product1);
+
 
     }
 }

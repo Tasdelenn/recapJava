@@ -6,7 +6,11 @@ import OOP3withNLayeredApp.DataAccess.JdbcProductDao;
 import OOP3withNLayeredApp.Entities.Product;
 
 public class ProductManager {
+    private IProductDao productDao;
 
+    public ProductManager(IProductDao productDao) { // ProductManager new lendiğinde bana bir productDao ver.
+        this.productDao = productDao;
+    }
 
     public void add(Product product) throws Exception {
         // İş kuralları buraya yazılır.

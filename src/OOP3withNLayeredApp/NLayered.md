@@ -15,3 +15,8 @@ DAL > Data Accsess Layer
 DAO > Data Accsess Object
 PDO > php Data Object 
 Bu gibi isimler sık kullanılır.
+
+---
+
+HibernateProductDao ve JDBCProductDao gibi birbirinin alternatifi olan durumlarda
+(Veya CorporateCustomer ve IndivdualCustomer vs gibi) bunlara INTERFACE yapılır...

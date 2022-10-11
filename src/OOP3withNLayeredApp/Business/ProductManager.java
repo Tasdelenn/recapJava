@@ -11,7 +11,7 @@ public class ProductManager {
             throw new Exception("Ürün fiyatı 10 TL 'den küçük olamaz");
         }
 
-        JdbcProductDao productDao = new JdbcProductDao();
+        JdbcProductDao productDao = new JdbcProductDao();   // Yukarıdaki iş kuralından geçerse, veritabanına ekle...
         productDao.add(product);
     }
 }

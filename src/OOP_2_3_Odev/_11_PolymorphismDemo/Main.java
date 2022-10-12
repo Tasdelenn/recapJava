@@ -21,6 +21,9 @@ public class Main {
             log.Log("Log mesajı");
         }
 
+        System.out.println("******************************");
 
+        CustomerManager customerManager = new CustomerManager(new FileLogger());    // constructor tanımlanırken, parametre olarak BaseLogger vereceğimizi belirtmiştik...
+        customerManager.add();                                                      // ctrl + sol click >> seni metoda götürür...
     }
 }

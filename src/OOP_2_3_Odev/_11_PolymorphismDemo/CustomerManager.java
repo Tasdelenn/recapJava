@@ -10,7 +10,7 @@ public class CustomerManager extends BaseLogger {
     public void add() {     // Diğer logger larda Base 'i extend ettiğine göre artık add metodunu istediğim logger la çalıştırabilirim...
 
         System.out.println("Müşteri eklendi");
-        this.logger.Log("Log mesajı");
+        this.logger.log("Log mesajı");
 
         // add yapıldığında, hem müşteri eklendi yazacak; hem de hangi sınıfla new leme yapıldıysa, constructor ı çalışacak ve onun log mesajını da yazacak...
 

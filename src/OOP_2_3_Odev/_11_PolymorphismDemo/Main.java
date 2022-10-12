@@ -4,10 +4,10 @@ public class Main {
     public static void main(String[] args) {
 
         EmailLogger logger = new EmailLogger();
-        logger.Log("Log mesajı");
+        logger.log("Log mesajı");
 
         DatabaseLogger logger2 = new DatabaseLogger();
-        logger2.Log("Log mesajı 2");
+        logger2.log("Log mesajı 2");
 
         System.out.println("*******************************");
 
@@ -17,8 +17,8 @@ public class Main {
         // Bu şekilde loggers' a istediğimizi enjekte edebilir; istediğimizi silebliriz. Kod bloğunun geri kalanı etkilenmez.
         // Mesela EmailLogger 'ı sildik; ConsoleLogger 'ı ekledik (Injection)... Kod blaoğunun kalan kısmı değişmedi...
 
-        for (BaseLogger log : loggers){
-            log.Log("Log mesajı");
+        for (BaseLogger l : loggers){
+            l.log("Log mesajı");
         }
 
         System.out.println("******************************");

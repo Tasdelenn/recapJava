@@ -1,4 +1,4 @@
-package OOP_2_3_Odev.InheritanceDemo;
+package OOP_2_3_Odev._10_InheritanceDemo;
 
 public class CreditUI {
 

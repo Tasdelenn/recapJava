@@ -9,7 +9,8 @@ public class Main {
          */
 
         CustomerManager customerManager = new CustomerManager();
-        customerManager.databaseManager = new SqlServerDatabaseManager();
+        //customerManager.databaseManager = new SqlServerDatabaseManager(); // mesela müşteri MySQL ile çalışmak istedi:
+        customerManager.databaseManager = new MySQLDatabaseMAnager();
         customerManager.getCustomers();
 
     }

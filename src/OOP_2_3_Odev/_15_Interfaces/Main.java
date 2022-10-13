@@ -7,8 +7,7 @@ public class Main {
         /**
          * İş katmanı (CustomerManager) MySQL veya Oracle'ı kullansın...
          */
-        CustomerManager customerManager = new CustomerManager();    // ICustomerDal da yöntem var ama o new lenemez!
-        customerManager.customerDal = new AmazonCloudDal();
+        CustomerManager customerManager = new CustomerManager(new MySQLCustomerDal());    // Burada interface lerle polimorfizm i yapmış olduk...
         customerManager.add();
     }
 }

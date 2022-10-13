@@ -11,6 +11,8 @@ public class Main {
         // uzak duruyoruz. Yoksa kodumuz spagetti koda döner.
         // Sonuçta hepsinde bir hesaplama yöntemi olacağı için aklımıza hemen BaseHesaplama Class'ı gelecek!
 
-
+        WomanGameCalculator womanGameCalc = new WomanGameCalculator();
+        womanGameCalc.hesapla();
+        womanGameCalc.gameOver();
     }
 }

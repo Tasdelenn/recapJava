@@ -33,5 +33,10 @@ public class Main {
         // Abstract sınıf da bi sınıf nihayetinde. Sadece 1 sınıfı inherit edebilir...
         // Kendisini extend eden sınıfın referansını tutabilir...
 
+        System.out.println("***********************************");
+
+        GameCalculator gameCalculator2 = new OlderGameCalculator();
+        gameCalculator2.hesapla();
+
     }
 }

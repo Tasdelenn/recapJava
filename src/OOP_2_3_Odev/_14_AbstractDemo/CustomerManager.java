@@ -1,4 +1,4 @@
-package OOP_2_3_Odev.AbstractDemo;
+package OOP_2_3_Odev._14_AbstractDemo;
 
 public class CustomerManager {
     BaseDatabaseManager databaseManager;   // Bizim stratejik nesnemiz. Çünkü ister Oracle'ı ister SQL Server'i

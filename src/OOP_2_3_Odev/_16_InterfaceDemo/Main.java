@@ -9,5 +9,12 @@ public class Main {
          * Interface demo için bu senaryoyu kullanacağız... Çoklu implementasyonlar gerçekleştireceğiz.
          */
 
+        Worker worker1 = new Worker();
+        worker1.pay();
+
+        System.out.println("**********************");
+
+        Robot robot1 = new Robot();
+        robot1.maintanence();
     }
 }

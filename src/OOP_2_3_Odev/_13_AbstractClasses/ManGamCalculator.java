@@ -5,4 +5,5 @@ public class ManGamCalculator extends GameCalculator{
     public void hesapla(){
         System.out.println("Puanınız = 80");
     }
+
 }

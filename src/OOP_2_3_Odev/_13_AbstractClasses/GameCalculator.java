@@ -1,13 +1,12 @@
 package OOP_2_3_Odev._13_AbstractClasses;
 
-public class GameCalculator {
-    public void hesapla(){
-        // Burada hesaplama algoritmasına girmiyoruz, sadece mekanizmayı anlamaya çalışıyoruz.
-        System.out.println("Puanınız hesaplandı = 100" );
-    }
-
-    public void gameOver(){
-        // Hesapla kadın, çocuk ve erkek için farklı olabilir ama, gameOver metodu herkes için ortak olsun...
+public abstract class GameCalculator {  // Abstract sınıf, abstract method içermek zorunda değil,
+                                        // Ama abstract method varsa, sınıf abstract olarak tanımlanmalıdır
+    public abstract void hesapla(); // Abstract method bir gövdeye sahip olamaz...
+                                    // Sadece bu sınıfı extend eden diğer sınıflar tarafından
+                                    // bu methodun içinin doldurulmasını (override edilmesini)
+                                    // ZORUNLU KILAR !
+    public final void gameOver(){   // Herkes için aynı olduğundan final yaptık
         System.out.println("Oyun Bitti... ");
     }
 }

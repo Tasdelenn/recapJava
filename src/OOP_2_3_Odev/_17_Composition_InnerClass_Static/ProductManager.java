@@ -10,5 +10,4 @@ public class ProductManager {
 
     // fooBar() 'ın gelebilmesi için, ProductValidator'un new lenmesi lazım
     ProductValidator productValidator = new ProductValidator();
-
 }
